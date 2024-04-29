@@ -2,8 +2,8 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { page } from "./world";
 // import { expect } from "@playwright/test";
 
-const username = 'shivam.rathour@maersk.com';
-const password = 'Amarsingh@12345';
+const username = '';
+const password = '';
 
 Given("User is able to navigate to the home page", async function () {
   // await page.goto("https://demo.maersk.com/book/");
