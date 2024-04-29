@@ -4,6 +4,9 @@ import { page } from "./world";
 
 const username = '';
 const password = '';
+const user = '';
+const pass = '';
+
 
 Given("User is able to navigate to the home page", async function () {
   // await page.goto("https://demo.maersk.com/book/");
@@ -21,8 +24,8 @@ Then("User is able to click on the login button", async function () {
   await page.waitForTimeout(10000);
   await page.locator('[data-test="coi-allow-all-button"]').click();
   await page.goto("https://demo.maersk.com/book/", { timeout: 500000 });
-  await page.getByPlaceholder("Username").type("cypressintuser");
-  await page.getByPlaceholder("Password").type("Cypress@123");
+  await page.getByPlaceholder("Username").type(user);
+  await page.getByPlaceholder("Password").type(pass);
   // await page.waitForTimeout(100000);
 });
 
