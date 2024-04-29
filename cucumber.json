@@ -1,0 +1,9 @@
+{
+  "default": {
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "requireModule": ["ts-node/register"],
+    "dryRun": false
+  }
+}
